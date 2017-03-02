@@ -31,7 +31,7 @@ gulp.task('deploywiki', function() {
       'git add .',
       'git commit -m "Deploy to Wiki"',
       'git remote add wiki https://github.com/ULL-ESIT-PL-1617/estudiar-las-rutas-en-expressjs-tpka',
-      'git push wiki master --force'
+      'git push wiki master'
   ]));
 });
 
