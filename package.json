@@ -1,0 +1,59 @@
+{
+  "name": "gitbook-boilerplate",
+  "version": "0.0.1",
+  "description": "GitBook Boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "generate-gitbook": "./scripts/losh generate-gitbook",
+    "generate-wiki": "./scripts/losh generate-wiki",
+    "build": "npm install && npm i gitbook-cli && npm run generate-gitbook && npm run generate-wiki",
+    "deploy-gitbook": "./scripts/losh deploy-gitbook",
+    "deploy-wiki": "./scripts/losh deploy-wiki",
+    "deploy": "npm run build && npm run deploy-gitbook && npm run deploy-wiki",
+    "version": "./scripts/losh version",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ULL-ESIT-PL-1617/estudiar-las-rutas-en-expressjs-tpka.git",
+    "wiki": "https://github.com/ULL-ESIT-PL-1617/estudiar-las-rutas-en-expressjs-tpka.wiki.git"
+  },
+  "keywords": [
+    "gitbook",
+    "boilerplate",
+    "starter"
+  ],
+  "author": "TPKA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-PL-1617/estudiar-las-rutas-en-expressjs-tpka/issues"
+  },
+  "repogitbook": {
+    "abian": "https://git.gitbook.com/alu0100887686/estudiar-las-rutas-en-expressjs-tpka.git",
+    "joaquin": "https://git.gitbook.com/joaquinsanchiz/estudiar-las-rutas-en-expressjs-tpka.git",
+    "pedro": "https://git.gitbook.com/plaguera/estudiar-las-rutas-en-expressjs-tpka.git",
+    "tarun": "https://git.gitbook.com/alu0100891782/estudiar-las-rutas-en-expressjs-tpka.git"
+  },
+  "homepage": "https://github.com/ULL-ESIT-PL-1617/estudiar-las-rutas-en-expressjs-tpka/blob/master/README.md",
+  "devDependencies": {
+    "async": "^1.4.0",
+    "express": "^4.14.1",
+    "fs-extra": "^0.22.1",
+    "gh-pages": "^0.3.1",
+    "gitbook": "^2.1.0",
+    "gitbook-cli": "^0.3.4",
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-shell": "^0.5.2",
+    "shell-task": "^1.0.0",
+    "express": "^4.14.1",
+    "ejs": "*",
+    "cookie-parser": "*"
+
+  },
+  "dependencies":{
+    "express": "^4.14.1",
+    "ejs": "*",
+    "cookie-parser": "*"
+  }
+}
