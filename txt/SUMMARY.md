@@ -1,9 +1,6 @@
 # Summary
 
-* [Direccionamiento Básico](1-BasicRouting.md)
-* [Direccionamiento](2-Routing.md)
-* [Middleware](3-Middleware.md)
-* [Documentación Router API](4-RouterApiDoc.md)
+* [Homepage](README.md)
 * [NodeJS](chapter1/nodejs.md)
 * [Github](chapter2/README.md)
     * [Creación de usuario](chapter2/creacion-de-usuario.md)
@@ -19,3 +16,7 @@
 * [Gitbook](chapter4/README.md)
     * [Creación de usuario](chapter4/crear-un-usuario-en-gitbooks.md)
     * [Markdown](chapter4/markdown.md)
+* [Direccionamiento Básico](1-BasicRouting.md)
+* [Direccionamiento](2-Routing.md)
+* [Middleware](3-Middleware.md)
+* [Documentación Router API](4-RouterApiDoc.md)
