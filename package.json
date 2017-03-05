@@ -7,7 +7,7 @@
     "generate-gitbook": "./scripts/losh generate-gitbook",
     "generate-wiki": "./scripts/losh generate-wiki",
     "build": "npm install && npm i gitbook-cli && npm run generate-gitbook && npm run generate-wiki",
-    "deploy-gitbook": "./scripts/losh deploy-gitbook",
+    "deploy-gitbook": "node ./scripts/deploy-gitbook.js",
     "deploy-wiki": "./scripts/losh deploy-wiki",
     "deploy": "npm run build && npm run deploy-gitbook && npm run deploy-wiki",
     "version": "./scripts/losh version",
@@ -38,7 +38,7 @@
   "devDependencies": {
     "async": "^1.4.0",
     "express": "^4.14.1",
-    "fs-extra": "^0.22.1",
+    "fs-extra": "^2.0.0",
     "gh-pages": "^0.3.1",
     "gitbook": "^2.1.0",
     "gitbook-cli": "^0.3.4",

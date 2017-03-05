@@ -1,6 +1,6 @@
-# Express basic routing
+# Direccionamiento Básico
 
-_Routing_ se refiere a determinar cómo una aplicación responde a una petición de un cliente a una determinada ruta \(URI\) y con un método de petición HTTP específico \(GET, POST, ...\).
+_Direccionamiento_ se refiere a determinar cómo una aplicación responde a una petición de un cliente a una determinada ruta \(URI\) y con un método de petición HTTP específico \(GET, POST, ...\).
 
 Cada ruta puede tener una o más funciones '_**handler**_', que se ejecutan cuando se accede a la ruta.
 
@@ -52,6 +52,3 @@ app.delete('/user', function (req, res) {
   res.send('Got a DELETE request at /user')
 })
 ```
-
-
-

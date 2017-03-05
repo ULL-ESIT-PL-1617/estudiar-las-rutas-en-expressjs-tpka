@@ -1,7 +1,7 @@
 # Direcciones de la Práctica: Estudiar las rutas en expressjs
 
 * [Repositorio Github](https://github.com/ULL-ESIT-PL-1617/estudiar-las-rutas-en-expressjs-tpka)
-* \[Despliegue en Gh-Pages\]\(FALTA LINK\)  
+* [Despliegue en Gh-Pages](https://ull-esit-pl-1617.github.io/estudiar-las-rutas-en-expressjs-tpka/)  
 
 ---
 
@@ -30,7 +30,7 @@
 | --- | --- |
 | Abián Torres Torres |  |
 | Tarun Mohandas Daryanani |  |
-| Pedro Miguel Lagüera Cabrera | [http://10.6.128.101:8080/](http://10.6.128.101:8080/) |
+| Pedro Miguel Lagüera Cabrera | <http://10.6.128.101:8080/> |
 | Joaquín Sanchíz Navarro |  |
 
 ---
@@ -39,10 +39,10 @@
 
 | Nombre | Dirección Gitbook |
 | --- | --- |
-| Abián Torres Torres |  |
-| Tarun Mohandas Daryanani |  |
-| Pedro Miguel Lagüera Cabrera |  |
-| Joaquín Sanchíz Navarro |  |
+| Abián Torres Torres | [alu0100887686/estudiar-las-rutas-en-expressjs-tpka](https://git.gitbook.com/alu0100887686/estudiar-las-rutas-en-expressjs-tpka.git) |
+| Tarun Mohandas Daryanani | [alu0100891782/estudiar-las-rutas-en-expressjs-tpka](https://git.gitbook.com/alu0100891782/estudiar-las-rutas-en-expressjs-tpka.git) |
+| Pedro Miguel Lagüera Cabrera | [plaguera/estudiar-las-rutas-en-expressjs-tpka](https://git.gitbook.com/plaguera/estudiar-las-rutas-en-expressjs-tpka.git) |
+| Joaquín Sanchíz Navarro | [joaquinsanchiz/estudiar-las-rutas-en-expressjs-tpka](https://git.gitbook.com/joaquinsanchiz/estudiar-las-rutas-en-expressjs-tpka.git) |
 
 ---
 
@@ -54,6 +54,3 @@
 | Tarun Mohandas Daryanani |  |
 | Pedro Miguel Lagüera Cabrera |  |
 | Joaquín Sanchíz Navarro |  |
-
-
-
