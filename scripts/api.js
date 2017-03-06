@@ -1,11 +1,11 @@
 var express = require('express')
 var app = express()
+var cookieParser = require('cookie-parser')
+app.use(cookieParser())
+
 var path = require('path');
 
 var subapp = express()
-
-var cookieParser = require('cookie-parser')
-app.use(cookieParser())
 
 app.locals.title = "API-app"
 
@@ -57,7 +57,8 @@ app.param('user', function(req, res, next, admin){
 
 //shows your data
 app.get('/yourdata', function(req, res, next){
-  res.write('Cookies: ' + req.cookies + '\n')
+  res.write('Cookies: ' + req.cookies.name + '\n')
+  res.write('Cookies: ' + req.cookies.name + '\n')
   res.write('IP: ' + req.ip + '\n')
   res.write('Method: ' + req.method + '\n')
   res.write('OriginalUrl: ' + req.originalUrl + '\n')
@@ -67,10 +68,10 @@ app.get('/yourdata', function(req, res, next){
 })
 
 app.get('/response', function(req, res){
-  res.cookie('name', 'alu', {domain: 'example.com', path: 'response', httpOnly: false}).send("Cookie was set. Now visit /yourdata")
+  res.cookie('name', 'alu', {expire : new Date() + 9999, domain: 'example.com', path: 'response', httpOnly: false}).send("Cookie was set. Now visit /yourdata");
 //  res.send("Cookie was set. Now visit /yourdata")
 //  res.end()
-})
+});
 
 //    /user/:user
 app.get('/user/:user', function(req, res, next){
