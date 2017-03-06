@@ -2,7 +2,7 @@
   "name": "gitbook-boilerplate",
   "version": "0.0.1",
   "description": "GitBook Boilerplate",
-  "main": "index.js",
+  "main": "hello.js",
   "scripts": {
     "generate-gitbook": "./scripts/losh generate-gitbook",
     "generate-wiki": "./scripts/losh generate-wiki",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ULL-ESIT-PL-1617/estudiar-las-rutas-en-expressjs-tpka.git",
+    "url": "git@github.com:ULL-ESIT-PL-1617/estudiar-las-rutas-en-expressjs-tpka.git",
     "wiki": "https://github.com/ULL-ESIT-PL-1617/estudiar-las-rutas-en-expressjs-tpka.wiki.git"
   },
   "keywords": [
