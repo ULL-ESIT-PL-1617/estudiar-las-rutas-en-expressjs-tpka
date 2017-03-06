@@ -27,7 +27,8 @@ var options = {
 //visit /yourdata
 //visit /response
 
-
+app.get('/', function(req, res, next){
+res.write("Use of variables and cookies     Visit /admin/app, /admin/email, /response")})
 //subapp in /admin
 subapp.use('/', express.static(path.join(__dirname, '/../public'), options))
 
@@ -56,7 +57,7 @@ app.param('user', function(req, res, next, admin){
 
 //shows your data
 app.get('/yourdata', function(req, res, next){
-  //res.write('Cookies: ' + req.cookies)
+  res.write('Cookies: ' + req.cookies + '\n')
   res.write('IP: ' + req.ip + '\n')
   res.write('Method: ' + req.method + '\n')
   res.write('OriginalUrl: ' + req.originalUrl + '\n')
@@ -66,7 +67,9 @@ app.get('/yourdata', function(req, res, next){
 })
 
 app.get('/response', function(req, res){
-  res.cookie('name', 'alu', {domain: 'example.com', path: 'response'})
+  res.cookie('name', 'alu', {domain: 'example.com', path: 'response', httpOnly: false}).send("Cookie was set. Now visit /yourdata")
+//  res.send("Cookie was set. Now visit /yourdata")
+//  res.end()
 })
 
 //    /user/:user

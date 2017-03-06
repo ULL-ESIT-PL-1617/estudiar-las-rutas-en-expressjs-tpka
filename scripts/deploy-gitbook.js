@@ -4,7 +4,7 @@ var repogitbook = require('../package.json').repogitbook;
 
 ghpages.publish(path.join(__dirname, '/../txt'), {
   branch: 'master',
-  repo: repogitbook.abian
+  repo: repogitbook.tarun
 }, function(err){
      console.log(err);
 });

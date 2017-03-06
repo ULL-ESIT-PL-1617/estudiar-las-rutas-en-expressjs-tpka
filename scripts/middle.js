@@ -14,6 +14,10 @@ router.use(function (req, res, next) {
   next()
 })
 
+app.get('/', function(req, res, next){
+   res.send("Visit /user/x, x = 0 is admin")
+})
+
 // a middleware sub-stack shows request info for any type of HTTP request to the /user/:id path
 router.use('/user/:id', function (req, res, next) {
   console.log('Request URL:', req.originalUrl)

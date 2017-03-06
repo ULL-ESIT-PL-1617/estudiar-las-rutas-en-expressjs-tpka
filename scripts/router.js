@@ -16,7 +16,7 @@ router.use(function timeLog (req, res, next) {
 });
 // define the home page route
 router.get('/', function (req, res) {
-  res.send('You are in the root');
+  res.send('You are in the root \nVisit /about, /chapter1, /chapter2');
 });
 // define the about route
 router.get('/about', function (req, res) {
