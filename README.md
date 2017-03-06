@@ -55,4 +55,4 @@ En esta práctica se ha llevado a cabo un pequeño tutorial del uso de rutas en 
 | Abián Torres Torres | [Abián Heroku](https://estudiar-rutas-expressjs-abian.herokuapp.com/) |
 | Tarun Mohandas Daryanani | [Tarun Heroku](https://estudiar-rutas-expressjs-tarun.herokuapp.com/) |
 | Pedro Miguel Lagüera Cabrera | [Pedro Heroku](https://estudiar-rutas-expressjs-pedro.herokuapp.com/) |
-| Joaquín Sanchíz Navarro | [Joaquín Heroku](https://estudiar-rutas-expressjs-joaquin.herokuapp.com/) |
+| Joaquín Sanchíz Navarro | [Joaquín Heroku](https://estudiar-rutas-expressjs-tpka.herokuapp.com/) |
