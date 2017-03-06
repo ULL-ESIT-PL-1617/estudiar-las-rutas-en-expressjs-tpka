@@ -39,7 +39,7 @@
 
 | Nombre | Dirección Gitbook |
 | --- | --- |
-| Abián Torres Torres | [alu0100887686/estudiar-las-rutas-en-expressjs-tpka](https://alu0100887686.gitbooks.io/estudiar-las-rutas-en-expressjs-tpka/content/) |
+| Abián Torres Torres | [alu0100887686/estudiar-las-rutas-en-expressjs-tpka](https://alu0100887686.gitbooks.io/estudiar-las-rutas-en-expressjs-abian/content/) |
 | Tarun Mohandas Daryanani | [alu0100891782/estudiar-las-rutas-en-expressjs-tpka](https://alu0100891782.gitbooks.io/estudiar-las-rutas-en-expressjs-tpka/content/) |
 | Pedro Miguel Lagüera Cabrera | [plaguera/estudiar-las-rutas-en-expressjs-tpka](https://plaguera.gitbooks.io/estudiar-las-rutas-en-expressjs-tpka/content/) |
 | Joaquín Sanchíz Navarro | [joaquinsanchiz/estudiar-las-rutas-en-expressjs-tpka](https://joaquinsanchiz.gitbooks.io/estudiar-las-rutas-en-expressjs-tpka/content/) |
