@@ -30,11 +30,10 @@ En esta práctica se ha llevado a cabo un pequeño tutorial del uso de rutas en 
 
 | Nombre | Dirección IP:Puerto |
 | --- | --- |
-| Abián Torres Torres |
-<http://10.6.128.34:80/> |  
-| Tarun Mohandas Daryanani |  |
-| Pedro Miguel Lagüera Cabrera | <http://10.6.128.101:8080/> |
-| Joaquín Sanchíz Navarro |  |
+| Abián Torres Torres | <http://10.6.128.34:80/> |
+| Tarun Mohandas Daryanani | <http://10.6.128.236:80/> |
+| Pedro Miguel Lagüera Cabrera | <http://10.6.128.101:80/> |
+| Joaquín Sanchíz Navarro  | <http://10.6.128.240:80/> |
 
 ---
 
@@ -55,5 +54,5 @@ En esta práctica se ha llevado a cabo un pequeño tutorial del uso de rutas en 
 | --- | --- |
 | Abián Torres Torres | [Abián Heroku](https://estudiar-rutas-expressjs-abian.herokuapp.com/) |
 | Tarun Mohandas Daryanani | [Tarun Heroku](https://estudiar-rutas-expressjs-tarun.herokuapp.com/) |
-| Pedro Miguel Lagüera Cabrera | [Pedro Heroku](https://estudiar-rutas-expressjs-tpka.herokuapp.com/) |
-| Joaquín Sanchíz Navarro | [Joaquín Heroku](https://estudiar-rutas-expressjs-tpka.herokuapp.com/) |
+| Pedro Miguel Lagüera Cabrera | [Pedro Heroku](https://estudiar-rutas-expressjs-pedro.herokuapp.com/) |
+| Joaquín Sanchíz Navarro | [Joaquín Heroku](https://estudiar-rutas-expressjs-joaquin.herokuapp.com/) |

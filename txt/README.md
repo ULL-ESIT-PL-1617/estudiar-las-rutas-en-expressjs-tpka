@@ -28,11 +28,10 @@
 
 | Nombre | Dirección IP:Puerto |
 | --- | --- |
-| Abián Torres Torres |
-<http://10.6.128.34:80/> |  
-| Tarun Mohandas Daryanani |  |
-| Pedro Miguel Lagüera Cabrera | <http://10.6.128.101:8080/> |
-| Joaquín Sanchíz Navarro |  |
+| Abián Torres Torres | <http://10.6.128.34:80/> |
+| Tarun Mohandas Daryanani | <http://10.6.128.236:80/> |
+| Pedro Miguel Lagüera Cabrera | <http://10.6.128.101:80/> |
+| Joaquín Sanchíz Navarro  | <http://10.6.128.240:80/> |
 
 ---
 
@@ -40,7 +39,7 @@
 
 | Nombre | Dirección Gitbook |
 | --- | --- |
-| Abián Torres Torres | [alu0100887686/estudiar-las-rutas-en-expressjs-tpka](https://alu0100887686.gitbooks.io/estudiar-las-rutas-en-expressjs-abian/content/) |
+| Abián Torres Torres | [alu0100887686/estudiar-las-rutas-en-expressjs-tpka](https://alu0100887686.gitbooks.io/estudiar-las-rutas-en-expressjs-tpka/content/) |
 | Tarun Mohandas Daryanani | [alu0100891782/estudiar-las-rutas-en-expressjs-tpka](https://alu0100891782.gitbooks.io/estudiar-las-rutas-en-expressjs-tpka/content/) |
 | Pedro Miguel Lagüera Cabrera | [plaguera/estudiar-las-rutas-en-expressjs-tpka](https://plaguera.gitbooks.io/estudiar-las-rutas-en-expressjs-tpka/content/) |
 | Joaquín Sanchíz Navarro | [joaquinsanchiz/estudiar-las-rutas-en-expressjs-tpka](https://joaquinsanchiz.gitbooks.io/estudiar-las-rutas-en-expressjs-tpka/content/) |
@@ -51,7 +50,7 @@
 
 | Nombre | Dirección Heroku |
 | --- | --- |
-| Abián Torres Torres | [Abián Heroku](https://estudiar-rutas-expressjs-tpka.herokuapp.com/) |
+| Abián Torres Torres | [Abián Heroku](https://estudiar-rutas-expressjs-abian.herokuapp.com/) |
 | Tarun Mohandas Daryanani | [Tarun Heroku](https://estudiar-rutas-expressjs-tarun.herokuapp.com/) |
-| Pedro Miguel Lagüera Cabrera | [Pedro Heroku](https://estudiar-rutas-expressjs-tpka.herokuapp.com/) |
-| Joaquín Sanchíz Navarro | [Joaquín Heroku](https://estudiar-rutas-expressjs-tpka.herokuapp.com/) |
+| Pedro Miguel Lagüera Cabrera | [Pedro Heroku](https://estudiar-rutas-expressjs-pedro.herokuapp.com/) |
+| Joaquín Sanchíz Navarro | [Joaquín Heroku](https://estudiar-rutas-expressjs-joaquin.herokuapp.com/) |
