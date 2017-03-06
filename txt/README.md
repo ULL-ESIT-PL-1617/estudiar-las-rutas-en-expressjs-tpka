@@ -50,7 +50,7 @@
 
 | Nombre | Dirección Heroku |
 | --- | --- |
-| Abián Torres Torres |  |
-| Tarun Mohandas Daryanani |  |
-| Pedro Miguel Lagüera Cabrera |  |
-| Joaquín Sanchíz Navarro |  |
+| Abián Torres Torres | [Abián Heroku](https://estudiar-rutas-expressjs-tpka.herokuapp.com/) |
+| Tarun Mohandas Daryanani | [Tarun Heroku](https://estudiar-rutas-expressjs-tpka.herokuapp.com/) |
+| Pedro Miguel Lagüera Cabrera | [Pedro Heroku](https://estudiar-rutas-expressjs-tpka.herokuapp.com/) |
+| Joaquín Sanchíz Navarro | [Joaquín Heroku](https://estudiar-rutas-expressjs-tpka.herokuapp.com/) |
