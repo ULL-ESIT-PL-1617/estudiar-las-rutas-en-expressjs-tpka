@@ -30,7 +30,8 @@ En esta práctica se ha llevado a cabo un pequeño tutorial del uso de rutas en 
 
 | Nombre | Dirección IP:Puerto |
 | --- | --- |
-| Abián Torres Torres |  |
+| Abián Torres Torres |
+<http://10.6.128.34:80/> |  
 | Tarun Mohandas Daryanani |  |
 | Pedro Miguel Lagüera Cabrera | <http://10.6.128.101:8080/> |
 | Joaquín Sanchíz Navarro |  |
