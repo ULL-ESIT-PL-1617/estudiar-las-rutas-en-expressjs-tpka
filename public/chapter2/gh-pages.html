@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Git · GitBook</title>
+        <title>Gh-Pages · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="github.html" />
+    <link rel="next" href="../chapter3/" />
     
     
-    <link rel="prev" href="creacion-de-usuario.html" />
+    <link rel="prev" href="github.io.html" />
     
 
     </head>
@@ -194,7 +194,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7.2" data-path="git.html">
+        <li class="chapter " data-level="1.7.2" data-path="git.html">
             
                 <a href="git.html">
             
@@ -246,7 +246,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.6" data-path="gh-pages.html">
+        <li class="chapter active" data-level="1.7.6" data-path="gh-pages.html">
             
                 <a href="gh-pages.html">
             
@@ -397,7 +397,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Git</a>
+        <a href=".." >Gh-Pages</a>
     </h1>
 </div>
 
@@ -412,76 +412,62 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h6 id="universidad-de-la-laguna"><em>Universidad de La Laguna</em></h6>
-<hr>
-<h1 id="git">Git</h1>
-<p><a href="https://git-scm.com/" target="_blank">Git</a> se trata de un sistema de control de versiones gratuito y de c&#xF3;digo abierto que permite desarrollar proyectos de manera r&#xE1;pida y eficiente. El control de versiones se puede llevar a cabo de manera local, centralizada o distribuida. Esta disponible tanto para <strong>Windows, Linux, como para Mac Osx.</strong></p>
-<p><img src="http://invistruct.com/wp-content/uploads/2012/08/centralized-vc.png" alt=""></p>
+                                <h1 id="gh-pages">GH-Pages</h1>
+<p>Puede haber casos en los que queramos asociar una p&#xE1;gina web a nuestro repositorio, en la que expongamos informaci&#xF3;n sobre ella pero haciedo uso de html. Esto es posible gracias a gh-pages. Es una soluci&#xF3;n similar a github.io, pero aplicada a cada repositorio en vez de a un usuario.</p>
 <ul>
-<li><p><strong>Configuraci&#xF3;n de la conexi&#xF3;n</strong>: La comunicaci&#xF3;n entre estos nodos se debe llevar a cabo de manera segura y automatizada, por ello desde cada m&#xE1;quina local, deberemos hacer uso de un cifrado sim&#xE9;trico. Por lo tanto, deberemos generar una clave p&#xFA;blica desde nuestra m&#xE1;quina local y establecer dicha conexi&#xF3;n. El procedimiento es el siguiente:</p>
-<p><strong>1.</strong> Ejecutar <strong>ssh-keygen -t dsa</strong> en la m&#xE1;quina           local para generar dos ficheros: <strong>~/.ssh/id_dsa.pub</strong> (clave pu&#x301;blica) y<br>~/.ssh/id_dsa (clave privada).<br>  <strong>2.</strong> A continuaci&#xF3;n deberemos crear el fichero <strong>~/.ssh/config</strong>, con el siguiente contenido <strong>PubkeyAcceptedKeyTypes +ssh-dss</strong>.<br>  <strong>3.</strong> Por &#xFA;ltimo, copiar el contenido del fichero ~/.ssh/id_dsa.pub en el apartado <strong>Settings -&gt; SSH and GPG keys -&gt; Add SSH key</strong> de nuestro perfil en Github desde un navegador, dar un t&#xED;tulo a esa conexi&#xF3;n y confirmar.</p>
-</li>
-<li><p><strong>Configuraci&#xF3;n de Git</strong>: Antes de empezar a trabajar en nuestros proyectos, deberemos configurar nuestro usuario global de git junto con otros datos asociados (Leer el <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration" target="_blank">manual</a> para m&#xE1;s informaci&#xF3;n):</p>
-<blockquote>
-<p>$ git config --global user.name &quot;nombre de usuario&quot;<br>$ git config --global user.email correo@ejemplo.com</p>
-</blockquote>
-<p>Una vez llevado a cabo, para crear un repositorio, simplemente ejecutar <em><strong>git init</strong></em> o <strong>git clone</strong> (para partir de repositorios remotos ya creados) en cualquier directorio que hallamos creado explicitamente para esta tarea.<br>  Otros comandos interesantes que nos permitir&#xE1;n realizar gran parte de las tareas a llevar a cabo en el entorno colaborativo son:</p>
-<ul>
-<li><p><strong>Ramificaci&#xF3;n y mezcla:</strong></p>
-<blockquote>
-<p>$ git branch</p>
-</blockquote>
-<ul>
-<li>Listar, crear o borrar ramas. Las ramas se tratan de hilos de trabajo independientes para un repositorio. Lo que permite trabajar con el mismo contenido de manera diferenciada.</li>
+<li>Debemos comenzar por situranos en nuestro repositorio de github. Deberemos fijarnos detenidamente en la secci&#xF3;n de ramas.</li>
 </ul>
-<blockquote>
-<p>$ git checkout</p>
-</blockquote>
+<p><img src="https://camo.githubusercontent.com/77f4e32f0089eec373d642ec63244fd8155c610a/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f323732332f34353832322f63323662366364322d353765332d313165322d383865322d3236376566313935323032352e706e67" alt=""></p>
 <ul>
-<li>Cambiar entre ramas o reguardar &#xE1;rboles de directorios de trabajo</li>
+<li>Primero deberemos crear una rama y llamarla <strong>gh-pages</strong>. Es impoertante el nombre que le estamos dando.</li>
+<li>Una vez hecho esto, deberemos alojar en esta rama todos los ficheros html que queramos que se visualicen en la p&#xE1;gina web. </li>
 </ul>
+<p>Para ello, clonamos el repositorio</p>
 <blockquote>
-<p>$ git log</p>
+<p>git clone &quot;direcci&#xF3;n ssh del repositorio&quot;</p>
+</blockquote>
+<p>Y luego deberemos movernos a la rama gh-pages</p>
+<blockquote>
+<p>git checkout gh-pages</p>
+</blockquote>
+<p>Una vez aqu&#xED; creamos alg&#xFA;n archivo html, por ejemplo:</p>
+<blockquote>
+<p>echo &quot;Hello World&quot; &gt; index.html</p>
+</blockquote>
+<p>Y solo nos queda empujar la rama gh-pages al repositorio remoto</p>
+<blockquote>
+<p>git push origin gh-pages</p>
 </blockquote>
 <ul>
-<li>Mostrar la lista de commits o confirmaciones realizadas.</li>
+<li>Para poder visualizar la p&#xE1;gina web simplemente debemos vistar la p&#xE1;gina web siguiendo el siguiente esquema:</li>
 </ul>
 <blockquote>
-<p>$ git merge</p>
+<p>&quot;username&quot;.github.io/&quot;repositorio&quot;</p>
 </blockquote>
+<p>Donde username es nuestro usuario y repositorio es el repositorio en cuesti&#xF3;n.</p>
+<h2 id="npm-unido-a-gh-pages">npm unido a gh-pages</h2>
+<p>A la hora de lanzar nuestos archivos html al reporitorio remoto, podemos usar este m&#xF3;dulo que nos publicar&#xE1; dichos archivos con un simple comando.</p>
 <ul>
-<li>Unir dos o m&#xE1;s historiales juntos.</li>
-</ul>
-</li>
-<li><p><strong>Compartici&#xF3;n y actualizaci&#xF3;n y mezcla.</strong></p>
-<blockquote>
-<p>$ git fetch</p>
-</blockquote>
-<ul>
-<li>Decargar objetos y referencias de otros repositorios.</li>
+<li>Lo primero que debemos hacer es instalar el m&#xF3;dulo gh-pages mediante el comando:</li>
 </ul>
 <blockquote>
-<p>$ git pull</p>
+<p>npm install gh-pages --save-dev</p>
 </blockquote>
+<p>Una vez hecho esto podemos pasar al segundo paso.</p>
 <ul>
-<li>Integra con otro repositorio o rama local.</li>
+<li>Deberemos situarnos en el directorio de nuestro proyecto y ejecutar el comando</li>
 </ul>
 <blockquote>
-<p>$ git push</p>
+<p>npm init</p>
 </blockquote>
-<ul>
-<li>Actualiza las referencias remotas  con los objetos asociados. </li>
-</ul>
+<p>de modo que se nos cree un archivo <strong><em>package.json</em></strong>. Este archivo almacena informaci&#xF3;n y configuraciones sobre nuesto proyecto. En &#xE9;l deberemos crear una l&#xED;nea lueva dentro de la secci&#xF3;n scripts, en la que definamos un comando llamado &quot;deploy&quot; por ejemplo, seguido de la sentencia a ejecutar. Deber&#xED;a quedar algo como:</p>
+<pre><code>    &quot;scripts&quot;: {
+       &quot;deploy&quot;: &quot;gh-pages -d dist&quot;
+    }
+</code></pre><p>Solo nos queda ejecutar nuestro comando:</p>
 <blockquote>
-<p>$ git remote</p>
+<p>npm run deploy</p>
 </blockquote>
-<ul>
-<li>Administrar un conjunto de repositorios controlados, tanto en remoto como en local.</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 
                                 
                                 </section>
@@ -509,12 +495,12 @@
 
             
                 
-                <a href="creacion-de-usuario.html" class="navigation navigation-prev " aria-label="Previous page: Creación de usuario">
+                <a href="github.io.html" class="navigation navigation-prev " aria-label="Previous page: Alojamiento de páginas en github.io">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="github.html" class="navigation navigation-next " aria-label="Next page: Cliente de Github (Mac osx y Windows)">
+                <a href="../chapter3/" class="navigation navigation-next " aria-label="Next page: Herramientas de desarrollo">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -525,7 +511,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Git","level":"1.7.2","depth":2,"next":{"title":"Cliente de Github (Mac osx y Windows)","level":"1.7.3","depth":2,"path":"chapter2/github.md","ref":"chapter2/github.md","articles":[]},"previous":{"title":"Creación de usuario","level":"1.7.1","depth":2,"path":"chapter2/creacion-de-usuario.md","ref":"chapter2/creacion-de-usuario.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/git.md","mtime":"2017-03-05T19:22:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-06T09:24:42.356Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Gh-Pages","level":"1.7.6","depth":2,"next":{"title":"Herramientas de desarrollo","level":"1.8","depth":1,"path":"chapter3/README.md","ref":"chapter3/README.md","articles":[{"title":"Cloud9","level":"1.8.1","depth":2,"path":"chapter3/c9.md","ref":"chapter3/c9.md","articles":[]},{"title":"Atom","level":"1.8.2","depth":2,"path":"chapter3/atom.md","ref":"chapter3/atom.md","articles":[]},{"title":"Pandoc","level":"1.8.3","depth":2,"path":"chapter3/pandoc.md","ref":"chapter3/pandoc.md","articles":[]}]},"previous":{"title":"Alojamiento de páginas en github.io","level":"1.7.5","depth":2,"path":"chapter2/github.io.md","ref":"chapter2/github.io.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/gh-pages.md","mtime":"2017-03-05T19:22:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-06T10:50:29.118Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

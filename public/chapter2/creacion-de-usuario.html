@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Gh-Pages · GitBook</title>
+        <title>Creación de usuario · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../chapter3/" />
+    <link rel="next" href="git.html" />
     
     
-    <link rel="prev" href="github.io.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -181,7 +181,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="creacion-de-usuario.html">
+        <li class="chapter active" data-level="1.7.1" data-path="creacion-de-usuario.html">
             
                 <a href="creacion-de-usuario.html">
             
@@ -246,7 +246,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7.6" data-path="gh-pages.html">
+        <li class="chapter " data-level="1.7.6" data-path="gh-pages.html">
             
                 <a href="gh-pages.html">
             
@@ -397,7 +397,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Gh-Pages</a>
+        <a href=".." >Creación de usuario</a>
     </h1>
 </div>
 
@@ -412,62 +412,23 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="gh-pages">GH-Pages</h1>
-<p>Puede haber casos en los que queramos asociar una p&#xE1;gina web a nuestro repositorio, en la que expongamos informaci&#xF3;n sobre ella pero haciedo uso de html. Esto es posible gracias a gh-pages. Es una soluci&#xF3;n similar a github.io, pero aplicada a cada repositorio en vez de a un usuario.</p>
+                                <h6 id="universidad-de-la-laguna"><em>Universidad de La Laguna</em></h6>
+<hr>
+<h1 id="creaci&#xF3;n-de-usuario">Creaci&#xF3;n de usuario:</h1>
+<p>Para poder <a href="https://github.com/login" title="Identificarnos" target="_blank">Identificarnos</a> en Github deberemos previamente haber creado un usuario desde la web principal. Deberemos seguir las instrucciones indicadas para finalmente definir nuestro usuario en Github.
+Github permite crear dos tipos de plan para nuestras cuentas de usuario:</p>
 <ul>
-<li>Debemos comenzar por situranos en nuestro repositorio de github. Deberemos fijarnos detenidamente en la secci&#xF3;n de ramas.</li>
+<li>Cuenta p&#xFA;blica</li>
+<li>Cuenta de pago <ul>
+<li>Personal </li>
+<li>Organizaci&#xF3;n</li>
+<li>Empresa</li>
 </ul>
-<p><img src="https://camo.githubusercontent.com/77f4e32f0089eec373d642ec63244fd8155c610a/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f323732332f34353832322f63323662366364322d353765332d313165322d383865322d3236376566313935323032352e706e67" alt=""></p>
-<ul>
-<li>Primero deberemos crear una rama y llamarla <strong>gh-pages</strong>. Es impoertante el nombre que le estamos dando.</li>
-<li>Una vez hecho esto, deberemos alojar en esta rama todos los ficheros html que queramos que se visualicen en la p&#xE1;gina web. </li>
+</li>
 </ul>
-<p>Para ello, clonamos el repositorio</p>
-<blockquote>
-<p>git clone &quot;direcci&#xF3;n ssh del repositorio&quot;</p>
-</blockquote>
-<p>Y luego deberemos movernos a la rama gh-pages</p>
-<blockquote>
-<p>git checkout gh-pages</p>
-</blockquote>
-<p>Una vez aqu&#xED; creamos alg&#xFA;n archivo html, por ejemplo:</p>
-<blockquote>
-<p>echo &quot;Hello World&quot; &gt; index.html</p>
-</blockquote>
-<p>Y solo nos queda empujar la rama gh-pages al repositorio remoto</p>
-<blockquote>
-<p>git push origin gh-pages</p>
-</blockquote>
-<ul>
-<li>Para poder visualizar la p&#xE1;gina web simplemente debemos vistar la p&#xE1;gina web siguiendo el siguiente esquema:</li>
-</ul>
-<blockquote>
-<p>&quot;username&quot;.github.io/&quot;repositorio&quot;</p>
-</blockquote>
-<p>Donde username es nuestro usuario y repositorio es el repositorio en cuesti&#xF3;n.</p>
-<h2 id="npm-unido-a-gh-pages">npm unido a gh-pages</h2>
-<p>A la hora de lanzar nuestos archivos html al reporitorio remoto, podemos usar este m&#xF3;dulo que nos publicar&#xE1; dichos archivos con un simple comando.</p>
-<ul>
-<li>Lo primero que debemos hacer es instalar el m&#xF3;dulo gh-pages mediante el comando:</li>
-</ul>
-<blockquote>
-<p>npm install gh-pages --save-dev</p>
-</blockquote>
-<p>Una vez hecho esto podemos pasar al segundo paso.</p>
-<ul>
-<li>Deberemos situarnos en el directorio de nuestro proyecto y ejecutar el comando</li>
-</ul>
-<blockquote>
-<p>npm init</p>
-</blockquote>
-<p>de modo que se nos cree un archivo <strong><em>package.json</em></strong>. Este archivo almacena informaci&#xF3;n y configuraciones sobre nuesto proyecto. En &#xE9;l deberemos crear una l&#xED;nea lueva dentro de la secci&#xF3;n scripts, en la que definamos un comando llamado &quot;deploy&quot; por ejemplo, seguido de la sentencia a ejecutar. Deber&#xED;a quedar algo como:</p>
-<pre><code>    &quot;scripts&quot;: {
-       &quot;deploy&quot;: &quot;gh-pages -d dist&quot;
-    }
-</code></pre><p>Solo nos queda ejecutar nuestro comando:</p>
-<blockquote>
-<p>npm run deploy</p>
-</blockquote>
+<p>La principal diferencia entre una cuenta p&#xFA;blica y otra de pago radica en que esta &#xFA;ltima permite establecer la visualizaci&#xF3;n de nuestros repositorios en privado, lo que da una mayor privacidad al desarrollo de nuestros proyectos.
+Dentro de las cuentas de pago, tenemos la posibilidad de escoger entre distintos planes, dependiendo de las caracter&#xED;sticas requeridad o el entorno de trabajo.
+<img src="https://i1.wp.com/wptavern.com/wp-content/uploads/2016/05/github-pricing.png?ssl=1" alt=""></p>
 
                                 
                                 </section>
@@ -495,12 +456,12 @@
 
             
                 
-                <a href="github.io.html" class="navigation navigation-prev " aria-label="Previous page: Alojamiento de páginas en github.io">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Github">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../chapter3/" class="navigation navigation-next " aria-label="Next page: Herramientas de desarrollo">
+                <a href="git.html" class="navigation navigation-next " aria-label="Next page: Git">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -511,7 +472,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Gh-Pages","level":"1.7.6","depth":2,"next":{"title":"Herramientas de desarrollo","level":"1.8","depth":1,"path":"chapter3/README.md","ref":"chapter3/README.md","articles":[{"title":"Cloud9","level":"1.8.1","depth":2,"path":"chapter3/c9.md","ref":"chapter3/c9.md","articles":[]},{"title":"Atom","level":"1.8.2","depth":2,"path":"chapter3/atom.md","ref":"chapter3/atom.md","articles":[]},{"title":"Pandoc","level":"1.8.3","depth":2,"path":"chapter3/pandoc.md","ref":"chapter3/pandoc.md","articles":[]}]},"previous":{"title":"Alojamiento de páginas en github.io","level":"1.7.5","depth":2,"path":"chapter2/github.io.md","ref":"chapter2/github.io.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/gh-pages.md","mtime":"2017-03-05T19:22:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-06T09:24:42.356Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Creación de usuario","level":"1.7.1","depth":2,"next":{"title":"Git","level":"1.7.2","depth":2,"path":"chapter2/git.md","ref":"chapter2/git.md","articles":[]},"previous":{"title":"Github","level":"1.7","depth":1,"path":"chapter2/README.md","ref":"chapter2/README.md","articles":[{"title":"Creación de usuario","level":"1.7.1","depth":2,"path":"chapter2/creacion-de-usuario.md","ref":"chapter2/creacion-de-usuario.md","articles":[]},{"title":"Git","level":"1.7.2","depth":2,"path":"chapter2/git.md","ref":"chapter2/git.md","articles":[]},{"title":"Cliente de Github (Mac osx y Windows)","level":"1.7.3","depth":2,"path":"chapter2/github.md","ref":"chapter2/github.md","articles":[]},{"title":"Hub","level":"1.7.4","depth":2,"path":"chapter2/hub.md","ref":"chapter2/hub.md","articles":[]},{"title":"Alojamiento de páginas en github.io","level":"1.7.5","depth":2,"path":"chapter2/github.io.md","ref":"chapter2/github.io.md","articles":[]},{"title":"Gh-Pages","level":"1.7.6","depth":2,"path":"chapter2/gh-pages.md","ref":"chapter2/gh-pages.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/creacion-de-usuario.md","mtime":"2017-03-05T19:22:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-06T10:50:29.118Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

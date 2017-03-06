@@ -16,7 +16,7 @@ gulp.task('deploygh', function() {
 });
 
 gulp.task('build', function() {
-        return gulp.src('').pipe(shell(['gitbook build ./txt ./gh-pages']));
+        return gulp.src('').pipe(shell(['gitbook build txt public']));
 });
 
 gulp.task('wiki', function() {
@@ -62,5 +62,3 @@ gulp.task('middle', function() {
 gulp.task('api', function() {
         return gulp.src('').pipe(shell(['sudo node scripts/api.js']));
 });
-
-

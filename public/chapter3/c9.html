@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Gitbook · GitBook</title>
+        <title>Cloud9 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="crear-un-usuario-en-gitbooks.html" />
+    <link rel="next" href="atom.html" />
     
     
-    <link rel="prev" href="../chapter3/pandoc.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -264,9 +264,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="../chapter3/">
+        <li class="chapter " data-level="1.8" data-path="./">
             
-                <a href="../chapter3/">
+                <a href="./">
             
                     
                     Herramientas de desarrollo
@@ -278,9 +278,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../chapter3/c9.html">
+        <li class="chapter active" data-level="1.8.1" data-path="c9.html">
             
-                <a href="../chapter3/c9.html">
+                <a href="c9.html">
             
                     
                     Cloud9
@@ -291,9 +291,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="../chapter3/atom.html">
+        <li class="chapter " data-level="1.8.2" data-path="atom.html">
             
-                <a href="../chapter3/atom.html">
+                <a href="atom.html">
             
                     
                     Atom
@@ -304,9 +304,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.3" data-path="../chapter3/pandoc.html">
+        <li class="chapter " data-level="1.8.3" data-path="pandoc.html">
             
-                <a href="../chapter3/pandoc.html">
+                <a href="pandoc.html">
             
                     
                     Pandoc
@@ -322,9 +322,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9" data-path="./">
+        <li class="chapter " data-level="1.9" data-path="../chapter4/">
             
-                <a href="./">
+                <a href="../chapter4/">
             
                     
                     Gitbook
@@ -336,9 +336,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1" data-path="crear-un-usuario-en-gitbooks.html">
+        <li class="chapter " data-level="1.9.1" data-path="../chapter4/crear-un-usuario-en-gitbooks.html">
             
-                <a href="crear-un-usuario-en-gitbooks.html">
+                <a href="../chapter4/crear-un-usuario-en-gitbooks.html">
             
                     
                     Creación de usuario
@@ -349,9 +349,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.2" data-path="markdown.html">
+        <li class="chapter " data-level="1.9.2" data-path="../chapter4/markdown.html">
             
-                <a href="markdown.html">
+                <a href="../chapter4/markdown.html">
             
                     
                     Markdown
@@ -397,7 +397,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Gitbook</a>
+        <a href=".." >Cloud9</a>
     </h1>
 </div>
 
@@ -412,10 +412,29 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="gitbooks">GitBooks</h1>
-<p>GitBook es una plataforma online para escribir y hostear documentaci&#xF3;n y a la vez, es un formato de libros open-source.</p>
-<p>Cientos de miles de usuarios utilizan GitBook para escribir documentaci&#xF3;n (librer&#xED;a, API, herramientas, ...), or bases de conocimiento. Los usuarios tambi&#xE9;n utilizan GitBook para publicar material docente, documentos t&#xE9;cnicos entre otros muchos.</p>
-<p><img src="https://www.macupdate.com/images/icons256/55965.png" alt="GitBookLogo"></p>
+                                <h1 id="cloud9">Cloud9</h1>
+<p><img src="https://i.blogs.es/850133/cvjnepwx/original.png" alt=""></p>
+<p>Cloud9 es un entorno que simula una bash de linux y que nos permite desarrollar proyectos en numerosos lenguajes distintos. Se caracteriza por permitirnos desarrollar proyectos sin necesidad de poseer una m&#xE1;quina f&#xED;sica que tenga bash o muchas dependencias que est&#xE1;n preinstaladas en este entorno.</p>
+<p><img src="https://i2.wp.com/www.xgeek.net/wp-content/uploads/2015/06/node-dev-Cloud9.png?ssl=1" alt=""></p>
+<p>Al igual que toda m&#xE1;quina, si queremos poder trabajar con github, debemos enlazar nuestra m&#xE1;quina (en este caso la m&#xE1;quina virtual en c9) con un usuario de github, de modo que podamos empujar y descargar datos a repositorios personales.</p>
+<ul>
+<li><p>Lo primero que debemos hacer es ejecutar el comando ssh-keygen.</p>
+<blockquote>
+<p>ssh-keygen -t rsa</p>
+</blockquote>
+<p>De este modo se nos generar&#xE1; una clave p&#xFA;blica (id_rsa.pub) y una clave privada (id_rsa) dentro del fichero <strong><em>~/.ssh</em></strong>.</p>
+</li>
+<li><p>El siguiente paso ser&#xE1; abrir nuestro perfil de Github e ir a la configuraci&#xF3;n de la cuenta, esto es la pesta&#xF1;a de la parte superior derecha de la pantalla inicial.</p>
+<p><img src="https://help.github.com/assets/images/enterprise/settings/userbar-account-settings.png" alt=""></p>
+</li>
+<li><p>Una vez dentro, buscar la secci&#xF3;n <strong><em>claves SSH</em></strong></p>
+</li>
+</ul>
+<p><img src="https://dhaine.github.io/2014-11-06-fmv/novice/git/img/github-ssh-keys.png" alt=""></p>
+<ul>
+<li>El &#xFA;ltimo paso ser&#xE1; a&#xF1;adir una clave nueva, asociada a la m&#xE1;quina que queremos a&#xF1;adir (la de c9). Solo debemos escribir un t&#xED;tulo que identifique a la m&#xE1;quina que hacemos referencia y la clave p&#xFA;blica. Esta clave ser&#xE1; el contenido del fichero <strong><em>~/.ssh/id_rsa.pub</em></strong> generado anteriormente.</li>
+</ul>
+<p><img src="https://files.readme.io/b91UUBtVQrSjJJOIvswa_SelectSSHRepo%20GitHub%208.png" alt=""></p>
 
                                 
                                 </section>
@@ -443,12 +462,12 @@
 
             
                 
-                <a href="../chapter3/pandoc.html" class="navigation navigation-prev " aria-label="Previous page: Pandoc">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Herramientas de desarrollo">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="crear-un-usuario-en-gitbooks.html" class="navigation navigation-next " aria-label="Next page: Creación de usuario">
+                <a href="atom.html" class="navigation navigation-next " aria-label="Next page: Atom">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -459,7 +478,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Gitbook","level":"1.9","depth":1,"next":{"title":"Creación de usuario","level":"1.9.1","depth":2,"path":"chapter4/crear-un-usuario-en-gitbooks.md","ref":"chapter4/crear-un-usuario-en-gitbooks.md","articles":[]},"previous":{"title":"Pandoc","level":"1.8.3","depth":2,"path":"chapter3/pandoc.md","ref":"chapter3/pandoc.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter4/README.md","mtime":"2017-03-05T19:22:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-06T09:24:42.356Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Cloud9","level":"1.8.1","depth":2,"next":{"title":"Atom","level":"1.8.2","depth":2,"path":"chapter3/atom.md","ref":"chapter3/atom.md","articles":[]},"previous":{"title":"Herramientas de desarrollo","level":"1.8","depth":1,"path":"chapter3/README.md","ref":"chapter3/README.md","articles":[{"title":"Cloud9","level":"1.8.1","depth":2,"path":"chapter3/c9.md","ref":"chapter3/c9.md","articles":[]},{"title":"Atom","level":"1.8.2","depth":2,"path":"chapter3/atom.md","ref":"chapter3/atom.md","articles":[]},{"title":"Pandoc","level":"1.8.3","depth":2,"path":"chapter3/pandoc.md","ref":"chapter3/pandoc.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter3/c9.md","mtime":"2017-03-05T19:22:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-06T10:50:29.118Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

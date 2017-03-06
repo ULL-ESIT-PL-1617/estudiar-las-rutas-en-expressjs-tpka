@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Hub · GitBook</title>
+        <title>NodeJS · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="github.io.html" />
+    <link rel="next" href="../chapter2/" />
     
     
-    <link rel="prev" href="github.html" />
+    <link rel="prev" href="../4-RouterApiDoc.html" />
     
 
     </head>
@@ -154,9 +154,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../chapter1/nodejs.html">
+        <li class="chapter active" data-level="1.6" data-path="nodejs.html">
             
-                <a href="../chapter1/nodejs.html">
+                <a href="nodejs.html">
             
                     
                     NodeJS
@@ -167,9 +167,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="./">
+        <li class="chapter " data-level="1.7" data-path="../chapter2/">
             
-                <a href="./">
+                <a href="../chapter2/">
             
                     
                     Github
@@ -181,9 +181,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="creacion-de-usuario.html">
+        <li class="chapter " data-level="1.7.1" data-path="../chapter2/creacion-de-usuario.html">
             
-                <a href="creacion-de-usuario.html">
+                <a href="../chapter2/creacion-de-usuario.html">
             
                     
                     Creación de usuario
@@ -194,9 +194,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.2" data-path="git.html">
+        <li class="chapter " data-level="1.7.2" data-path="../chapter2/git.html">
             
-                <a href="git.html">
+                <a href="../chapter2/git.html">
             
                     
                     Git
@@ -207,9 +207,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.3" data-path="github.html">
+        <li class="chapter " data-level="1.7.3" data-path="../chapter2/github.html">
             
-                <a href="github.html">
+                <a href="../chapter2/github.html">
             
                     
                     Cliente de Github (Mac osx y Windows)
@@ -220,9 +220,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7.4" data-path="hub.html">
+        <li class="chapter " data-level="1.7.4" data-path="../chapter2/hub.html">
             
-                <a href="hub.html">
+                <a href="../chapter2/hub.html">
             
                     
                     Hub
@@ -233,9 +233,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.5" data-path="github.io.html">
+        <li class="chapter " data-level="1.7.5" data-path="../chapter2/github.io.html">
             
-                <a href="github.io.html">
+                <a href="../chapter2/github.io.html">
             
                     
                     Alojamiento de páginas en github.io
@@ -246,9 +246,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.6" data-path="gh-pages.html">
+        <li class="chapter " data-level="1.7.6" data-path="../chapter2/gh-pages.html">
             
-                <a href="gh-pages.html">
+                <a href="../chapter2/gh-pages.html">
             
                     
                     Gh-Pages
@@ -397,7 +397,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Hub</a>
+        <a href=".." >NodeJS</a>
     </h1>
 </div>
 
@@ -412,38 +412,75 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h6 id="universidad-de-la-laguna"><em>Universidad de La Laguna</em></h6>
-<hr>
-<h1 id="hub">Hub</h1>
-<p><strong><em>Hub</em></strong> se trata de un entorno para git que nos hace m&#xE1;s f&#xE1;cil la vida, automatizando y extiende ciertas rutinas, que utilizando el entorno de git nativo, conllevar&#xED;a un proceso m&#xE1;s tedioso. Est&#xE1; <a href="https://github.com/github/hub" target="_blank">dispobible</a> para <strong>Mac Osx</strong> y <strong>Linux</strong>. Tambi&#xE9;n cuenta con una versi&#xF3;n precompilada para su <a href="https://github.com/github/hub/releases" target="_blank">instalaci&#xF3;n</a>.</p>
-<p>Algunas de esas rutinas que han sido costumizadas son las siguientes:</p>
+                                <h1 id="instalaci&#xF3;n-de-nodejs">Instalaci&#xF3;n de NodeJS</h1>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2000px-Node.js_logo.svg.png" alt=""></p>
+<ul>
+<li><h2 id="instalaci&#xF3;n-en-linux"><strong>Instalaci&#xF3;n en Linux</strong></h2>
+</li>
+</ul>
+<p>Para poder instalar nodejs en nuestro sistema Linux debemos hacer uso del comando <em>apt</em>.
+En primer lugar, deberemos actualizar la lista de repositorios para poder otener la &#xFA;ltima versi&#xF3;n.
+Esto se har&#xE1; mediante:     </p>
 <blockquote>
-<p>$ git create [nombre] [-p] [-d descripcion] [-h pagina]</p>
+<p>sudo apt-get update</p>
 </blockquote>
-<pre><code>-  Crea un nuevo repositorio **publico** en **Github** a partir del repositorio actual y lo a&#xF1;ade a origin en &quot;git@github.usuario/repositorio.git&quot;. Adem&#xE1;s podremos a&#xF1;adir una **p&#xE1;gina** de car&#xE1;cter informativo enlazada a nuestro repositorio o una breve descripci&#xF3;n. La opci&#xF3;n **-p** permite crear un repositorio **privado**, en el caso de que se haya contratado el correspondiente [**plan**](/chapter2/creacion-de-usuario.md).
-</code></pre><blockquote>
-<p>$ git browse</p>
+<p>A continuaci&#xF3;n, debemos descargar e instalar el paquete nodejs. Deberemos escribir el comando:</p>
+<blockquote>
+<p>sudo apt-get install nodejs</p>
 </blockquote>
-<pre><code>- Permite abrir repositorios en el **navegador** usando las variables almacenadas en la configuraci&#xF3;n git.
-</code></pre><blockquote>
-<p>$ git compare</p>
+<p>De este modo ya tenemos instalada la dependencia de nodejs.</p>
+<p>Ahora podemos proceder a instalar npm.</p>
+<blockquote>
+<p>sudo apt-get install npm</p>
 </blockquote>
-<pre><code>- Despliega una **vista comparativa** en el navegador por defecto del sistema con informaci&#xF3;n acerca de ramas, etiquestas de nombres o commits.
-</code></pre><blockquote>
-<p>$ git fork [--no-remote]</p>
+<p>Una vez hecho esto ya deber&#xED;amos tener instalado npm correctamente, si todo ha ido correctamente.</p>
+<p>Ahora ya podemos instalar cualquier paquete usando npm mediante el comando</p>
+<blockquote>
+<p>npm install &quot;paquete&quot;</p>
 </blockquote>
-<pre><code>- Crea una bifurcaci&#xF3;n de nuestro proyecto original en Github y lo a&#xF1;ade a uno nuevo ,remoto o no, bajo el nombre de usuario.
-</code></pre><blockquote>
-<p>$ git pull-request</p>
+<p>Una vez hecho esto habremos instalado npm y nodejs. Debemos comprobar que npm est&#xE1; correctamente instalado. Para ello ejecutamos </p>
+<blockquote>
+<p>npm version </p>
 </blockquote>
-<pre><code>- Realiza una petici&#xF3;n de arrastre del contenido de nuestro proyecto a Github, al cual apunta **origin** en remoto. 
-</code></pre><blockquote>
-<p>$ git ci-status</p>
+<p>Nos deber&#xED;a salir algo como lo siguiente</p>
+<p><img src="https://4.bp.blogspot.com/-mD6Ez-rMbVo/VuT0aU5cWXI/AAAAAAAAK7U/Y3E8h0FLhLAJ8XX-kFigDRzTrjLyjoWjA/s1600/node_installation_details.png" alt=""></p>
+<ul>
+<li><h2 id="instalaci&#xF3;n-en-mac"><strong>Instalaci&#xF3;n en Mac</strong></h2>
+</li>
+</ul>
+<p>Para proceder a la instalacion de NodeJS en Mac se exigen dos requisitos:</p>
+<ul>
+<li>En perimer lugar, necesitamos el programa XCode, que nos ayudar&#xE1; a compilar y ejecutar el c&#xF3;digo de instalaci&#xF3;n.</li>
+<li>En segundo lugar, debemos tener instalado el administrador de paquetes <em>Homebrew</em>, que nos permitir&#xE1; instalar NodeJs en unos sencillos pasos.</li>
+</ul>
+<p>Una vez comprobado esto, procedemos a instalar node, que incluir&#xE1; tanto nodejs como npm. Ejecutamos el comando:</p>
+<blockquote>
+<p>brew install node</p>
 </blockquote>
-<pre><code>- Comprobar el estado de SHA para COMMIT en Github.
-</code></pre><blockquote>
-<h6 id="nota-se-puede-utilizar-hub-como-alias"><em>Nota: se puede utilizar hub como alias</em></h6>
+<p>En cuanto acabe la descarga e instalaci&#xF3;n solo debemos comprobar que todo se ha realizado correctamente con los comandos:</p>
+<blockquote>
+<p>node -v</p>
 </blockquote>
+<p>y </p>
+<blockquote>
+<p>npm -v</p>
+</blockquote>
+<p><img src="http://blog.teamtreehouse.com/wp-content/uploads/2014/10/node-install1.png" alt=""></p>
+<ul>
+<li><h2 id="instalaci&#xF3;n-en-windows"><strong>Instalaci&#xF3;n en Windows</strong></h2>
+</li>
+</ul>
+<p>La instalaci&#xF3;n en Windows ser&#xE1; bastante m&#xE1;s gr&#xE1;fica e intuitiva que en Mac o Linux. 
+Lo primero que debemos hacer es dirigirnos a la p&#xE1;fina oficial de nodejs.
+<a href="https://nodejs.org/en/" target="_blank">https://nodejs.org/en/</a></p>
+<p>Deberemos buscar en la secci&#xF3;n de descargas el paquete para Windows con la extensi&#xF3;n .msi.</p>
+<p>Una vez descargado no tenemos m&#xE1;s que ejecutar dicho archivo (el instalador), aceptar los t&#xE9;rminos y licencia de datos y elegir que dependencias queremos instalar. En este caso elegiremos todas.<img src="http://blog.teamtreehouse.com/wp-content/uploads/2015/01/installer.png" alt=""></p>
+<p>Una vez instalado solo nos queda comprobar que se ha instalado correctamente, para lo que ejecutaremos dos comandos en <strong><em>Command Prompt de Windows</em></strong> y <strong><em>PowerShell</em></strong></p>
+<blockquote>
+<p>node -v
+npm -v</p>
+</blockquote>
+<p>y comprobar que nos sale la versi&#xF3;n instalada.</p>
 
                                 
                                 </section>
@@ -471,12 +508,12 @@
 
             
                 
-                <a href="github.html" class="navigation navigation-prev " aria-label="Previous page: Cliente de Github (Mac osx y Windows)">
+                <a href="../4-RouterApiDoc.html" class="navigation navigation-prev " aria-label="Previous page: Documentación Router API">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="github.io.html" class="navigation navigation-next " aria-label="Next page: Alojamiento de páginas en github.io">
+                <a href="../chapter2/" class="navigation navigation-next " aria-label="Next page: Github">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -487,7 +524,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Hub","level":"1.7.4","depth":2,"next":{"title":"Alojamiento de páginas en github.io","level":"1.7.5","depth":2,"path":"chapter2/github.io.md","ref":"chapter2/github.io.md","articles":[]},"previous":{"title":"Cliente de Github (Mac osx y Windows)","level":"1.7.3","depth":2,"path":"chapter2/github.md","ref":"chapter2/github.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter2/hub.md","mtime":"2017-03-05T19:22:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-06T09:24:42.356Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"NodeJS","level":"1.6","depth":1,"next":{"title":"Github","level":"1.7","depth":1,"path":"chapter2/README.md","ref":"chapter2/README.md","articles":[{"title":"Creación de usuario","level":"1.7.1","depth":2,"path":"chapter2/creacion-de-usuario.md","ref":"chapter2/creacion-de-usuario.md","articles":[]},{"title":"Git","level":"1.7.2","depth":2,"path":"chapter2/git.md","ref":"chapter2/git.md","articles":[]},{"title":"Cliente de Github (Mac osx y Windows)","level":"1.7.3","depth":2,"path":"chapter2/github.md","ref":"chapter2/github.md","articles":[]},{"title":"Hub","level":"1.7.4","depth":2,"path":"chapter2/hub.md","ref":"chapter2/hub.md","articles":[]},{"title":"Alojamiento de páginas en github.io","level":"1.7.5","depth":2,"path":"chapter2/github.io.md","ref":"chapter2/github.io.md","articles":[]},{"title":"Gh-Pages","level":"1.7.6","depth":2,"path":"chapter2/gh-pages.md","ref":"chapter2/gh-pages.md","articles":[]}]},"previous":{"title":"Documentación Router API","level":"1.5","depth":1,"path":"4-RouterApiDoc.md","ref":"4-RouterApiDoc.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter1/nodejs.md","mtime":"2017-03-05T19:22:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-03-06T10:50:29.118Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
