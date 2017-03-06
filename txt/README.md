@@ -18,6 +18,8 @@
 
 ## [Descripción de la Práctica](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/practicas/practicalearningrouting.html)
 
+En esta práctica se ha llevado a cabo un pequeño tutorial del uso de rutas en expressjs. Para consultar algunos de los ejemplos ilustrativos, ir al directorio [/scripts](/scripts).
+
 ---
 
 ## [Página de la Asignatura](https://campusvirtual.ull.es/1617/course/view.php?id=1148)
