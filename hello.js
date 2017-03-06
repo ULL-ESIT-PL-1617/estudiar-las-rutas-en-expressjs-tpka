@@ -1,22 +1,10 @@
-var express = require('express')
-var app = express()
-var path = require('path');
+app.set('port', (process.env.PORT || 5000))
+app.use(express.static(__dirname + '/gh-pages'))
 
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
-app.use(express.static('gh-pages'));
-
-app.get('/', function (req, res) {
-  //res.send('Hello World!')
-  res.render('index', { title: 'Express' });
+app.get('/', function(request, response) {
+  response.send('Hello World!')
 })
 
-var server = app.listen(8080, function () {
-
-  var host = server.address().address
-  var port = server.address().port
-
-  console.log('App listening at http://%s:%s', host, port)
-
+app.listen(app.get('port'), function() {
+  console.log("Node app is running at localhost:" + app.get('port'))
 })
